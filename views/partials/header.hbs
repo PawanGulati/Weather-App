@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="icon" href="./img/weather.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800i&display=swap" rel="stylesheet">
+    <title>Weather</title>
+    <style>
+        #title{
+             font-size: 72px;
+            background: -webkit-linear-gradient(#000428, #004e92);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .navbar{
+            padding: .4rem 1rem;
+        }
+       section .jumbotron{
+           font-family: 'Montserrat', sans-serif;
+           padding: 5rem 2rem 3rem 2rem;
+            background: #2980B9;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+           background-size: cover;
+       }
+       .btn-outline-warning{
+           color:rgb(252, 189, 30);
+           border-color:rgb(252, 189, 30);
+           border: solid;
+       }
+       #index-jumbo{
+           padding: 2rem 2rem;
+           color:honeydew;
+           background-color: #563d7c;
+       }
+       #form-jumbo{
+           width:500px;
+           height:400px;
+           margin: 0 auto;
+           background: #563d7c;
+           color: white;
+           padding:0.5rem 2rem
+       }
+       body{
+           background: #2980B9;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+       }
+       .form-group{
+           margin-left:30%; 
+       }
+    
+    </style>
+  </head>
+  <body style="background-color: rgba(206, 206, 206, 0.925)">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
+    <i class="fas fa-cloud-sun" style="color:honeydew"></i><a class="navbar-brand" href="/">FORECASTER</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#HandBurger" aria-controls="HandBurger" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+        <div class="collapse navbar-collapse justify-content-end" id="HandBurger">    
+            <ul class="navbar-nav">
+                <i class="fa fa-user-plus mt-3" style="color:white"></i>
+                <li class="nav-item active mr-2">
+                <a class="nav-link" href="/">Sign-Up</a>
+                </li>
+                <i class="fa fa-user mt-3" style="color:white"></i>
+                <li class="nav-item active">
+                <a class="nav-link" href="/">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>    
