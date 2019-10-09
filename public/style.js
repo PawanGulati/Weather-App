@@ -5,7 +5,7 @@ const message = document.querySelector('#form-div')
 form.addEventListener('submit',(e)=>{
     e.preventDefault()
     message.innerHTML = `<center><strong><br><br><i class="fa fa-spinner" style="font-size:50px"></i></strong></center>`
-    fetch(`http://localhost:3000/weather/?search=${searchedAddr.value}`).then((res)=>{
+    fetch(`/weather/?search=${searchedAddr.value}`).then((res)=>{
         res.json().then((data)=>{
             if(data.error) return message.innerHTML=`<br><br><h4 style="text-align:center">ERROR :: ${data.error} :: </h4>`
             // console.log(data)

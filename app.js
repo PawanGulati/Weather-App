@@ -5,6 +5,7 @@ const geocode = require("./utils/geocode")
 const forecast = require("./utils/forecast")
 
 const app = express();
+const port = process.env.PORT || 3000
 
 app.set("view engine","hbs");
 const publicPath = path.join(__dirname,'./public');
@@ -50,7 +51,7 @@ app.get('*',(req,res)=>{
     res.render('404')
 })
 
-app.listen('3000',()=>{
-    console.log('server\'s running at 3000')
+app.listen(port,()=>{
+    console.log(`server\'s running at ${port}`)
 })
 
