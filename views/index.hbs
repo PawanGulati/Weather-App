@@ -1,21 +1,23 @@
-{{>header}}
-    <section class="header">
-        <div class="jumbotron text-center">
-            <div class="display-1" id="title">FORECASTER</div>
-            <p class="mb-5 mt-2">World's #1 Weather Forecast API, Brings a forthwith Forecast for you </p>
+		{{>header}}
+		<main class="d-flex flex-column justify-content-center">
+			<section class="d-flex flex-row justify-content-around align-items-stretch">
+				<div class="d-flex flex-column justify-content-between align-items-center">
+					<div id="title" class="display-1">FORECASTER</div>
+					<p class="font-weight-bold text-lg text-md text-sm text-center">World's #1 Weather Forecast API, Brings a forthwith Forecast for you </p>
 
-            <a class="btn btn-success m-2" style="border:solid white; color:white" href="/form">TRY FOR FREE</a>
-            <a class="btn btn-warning m-2" style="border:solid white">GO FOR PREMIUM</a>
-        </div>
-    </section>
+					<p><a class="btn btn-warning border border-light premium" >GO FOR PREMIUM</a></p>
+				</div>
+			</section>
 
-    <div class="container">
-        <div id="index-jumbo" class="jumbotron text-center mt-5">
-            <div class="display-4 mb-3"> Get started with FREE </div>
+			<div class="d-flex flex-row justify-content-center p-2">
+				<div id="index-jumbo">
+					<p>Get started</p>
 
-            <a class="btn btn-info btn-lg" href="/form">TRY FOR FREE</a>
-        </div>
-    </div>
-
-{{>footer}}
+					<p><a class="btn btn-info btn-lg" href="/form">TRY FOR FREE</a></p>
+				</div>
+			</div>
+		</main>
+		{{>footer}}
+	</body>
+</html>
 
