@@ -3,24 +3,23 @@
 	{{>head}}
 	<body class="d-flex flex-column justify-content-center">
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top">
-				<i class="fas fa-cloud-sun" style="color:honeydew"></i><a class="navbar-brand" href="/">FORECASTER</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#HandBurger" aria-controls="HandBurger" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-secondary sticky-top justify-content-between">
+				<div id="brand"><i class="fas fa-cloud-sun" ></i><a class="navbar-brand" href="/">FORECASTER</a></div>
+				<div id="menu">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#HandBurger" aria-controls="HandBurger" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 					<div class="collapse navbar-collapse justify-content-end" id="HandBurger">    
 						<ul class="navbar-nav">
-							<i class="fa fa-user-plus mt-3" style="color:white"></i>
 							<li class="nav-item active mr-2">
-								<a class="nav-link" href="/">Sign-Up</a>
+								<a class="nav-link" href="/"><i class="fa fa-user-plus mt-3"></i>Sign-Up</a>
 							</li>
-							<i class="fa fa-user mt-3" style="color:white"></i>
 							<li class="nav-item active">
-								<a class="nav-link" href="/">Login</a>
+								<a class="nav-link" href="/"><i class="fa fa-user mt-3"></i>Login</a>
 							</li>
 						</ul>
 					</div>
+				</div>
 			</nav>
 		</header>
 
