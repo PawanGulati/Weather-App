@@ -1,28 +1,24 @@
 {{>header}}
+<main class="d-flex flex-column justify-content-around">
+	<section class="d-flex flex-row justify-content-center">
+		<form id="form-address">
+			<div class="input-group">
+			<span class="input-group-text"><i class="fa fa-map-marker"></i></span>
+				<input class="form-control" type="text" placeholder="Address" aria-label="Username" aria-describedby="basic-addon1">
+			</div>
+			<button type="submit" class="btn btn-primary">Get Forecast</button>
+		</form>
+	</section>
 
-<div class="container mt-5">
-    <form class="form-inline d-flex justify-content-center ">
-    <div class="form-group mb-2 mr-3 mt-3 ">
-        <div class="input-group mb-3" style="width:300px">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"><i class="fa fa-map-marker"></i></span>
-            </div>
-            <input type="text" class="form-control" placeholder="Address" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-    </div>
-    <div class="d-flex justify-content-center " style="width:300px"><button type="submit" class="btn btn-primary mb-2 ">Get Forecast</button></div>
-    </form>
-</div>
+<div class="d-flex flex-row justify-content-center">
+    <div id="form-jumbo">
+        <header>FORECAST</header>
+        <div id="form-div" class="d-flex justify-content-center flex-column">
 
-<div class="container">
-    <div id="form-jumbo" class="jumbotron">
-        <strong><div class="display-4">FORECAST</div></strong>
-        <div id="form-div">
-
-        </div>
+		</div>
     </div>
 </div>
-
+</main>
 <script src="style.js"></script>
 
 {{>footer}}
