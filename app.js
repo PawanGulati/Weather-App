@@ -24,9 +24,10 @@ app.get('/form',(req,res)=>{
 
 app.get('/weather',(req,res)=>{
     const address = req.query.search
-    if(!address){
+    // console.log(address)
+    if(address===''){
         return res.send({
-            Error: 'Hey ya cuz pls provide search term'
+            error: 'Hey ya cuz pls provide search term'
         })
     }
     geocode(address,(error,{Place,latitude,longitude}={})=>{
@@ -48,7 +49,7 @@ app.get('/weather',(req,res)=>{
 })
 
 app.get('*',(req,res)=>{
-    res.render('404')
+    res.render('! 404 Error Came !')
 })
 
 app.listen(port,()=>{

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node app.js"
+    "start": "node app.js",
+    "mydick": "nodemon app.js -e js,hbs"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,8 @@
     "hbs": "^4.0.5",
     "path": "^0.12.7",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
   }
 }
