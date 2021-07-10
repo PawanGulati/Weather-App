@@ -1,0 +1,215 @@
+<style>
+      html, body, .viewport {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+body{
+	font-size: 12pt;
+	background-color: rgba(206, 206, 206, 0.925)
+	background: #2980B9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+main {
+	flex: 1;
+	padding: 1rem;
+}
+
+main > section {
+	padding: 1rem;
+}
+main > div {
+	flex:1;
+}
+
+#title{
+	font-weight: bold;
+	font-style: oblique;
+	font-size: 2.5rem;
+	background: -webkit-linear-gradient(#000428, #004e92);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+}
+.navbar{
+	padding: .4rem 1rem;
+	color: white;
+
+	.brand i {
+		color: honeydew;
+	}
+	#menu {
+		position: relative;
+
+		
+	}
+}
+#HandBurger.show, #HandBurger.collapsing {
+	position: absolute;
+	background-color: rgb(108, 117, 125);
+	padding: 0 1rem;
+	white-space: nowrap;
+	right: 0px;
+	margin-right: 1rem;
+}
+a.nav-link i {
+	padding-right: 5px;
+}
+
+section .jumbotron{
+	font-family: 'Montserrat', sans-serif;
+	background: #2980B9;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+			background-size: cover;
+}
+.premium{
+	font-weight: bold;
+	font-style: oblique;
+	border-width: medium !important;
+}
+#form-address {
+	display: flex;
+	flex-direction: column;
+}
+#form-address button {
+	white-space: nowrap;
+	margin-top: 10px;
+}
+#index-jumbo{
+	margin-top: 2.5rem;
+	text-align: center;
+	font-size: 2.0rem;
+	padding: 2rem 2rem;
+	color:honeydew;
+	background-color: #563d7c;
+}
+#form-jumbo{
+flex: 1;
+max-width:500px;
+max-height:400px;
+min-width: 300px;
+min-height: 200px
+margin: 0 auto;
+background: #563d7c;
+color: white;
+padding:0.5rem 2rem
+}
+.form-group{
+	margin-left:30%; 
+}
+#form-jumbo header {
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+#loading {
+	text-align: center
+	font-size: 2rem;
+}
+#forecast p {
+	line-height: 1;
+	font-weight: 700;
+
+}
+#forecast p label {
+	font-weight: 500;
+}
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+	#title {
+		font-size: 3rem;
+	}
+	#index-jumbo{
+		margin-top: 3rem;
+		font-size: 2.5rem;
+	}
+	#loading {
+		font-size: 2rem;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+	body {
+		font-size: 1.1rem;
+	}
+	#title {
+		font-size: 4rem;
+	}
+	#form-address {
+		flex-direction: row;
+	}
+	#form-address button {
+		margin-top: 0;
+	}
+	#index-jumbo{
+		margin-top: 3.5rem;
+		font-size: 3.0rem;
+	}
+	#loading {
+		font-size: 3rem;
+	}
+	main > section {
+		padding: 2rem 1rem;
+	}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	body {
+		font-size: 1.25rem;
+	}
+	#title {
+		font-size: 5rem;
+	}
+	main > section {
+		padding: 3rem 1rem;
+	}
+	#index-jumbo{
+		margin-top: 4rem;
+		font-size: 3.5rem;
+	}
+	#loading {
+		font-size: 5rem;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}
+
+</style>
+
